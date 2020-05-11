@@ -6,16 +6,16 @@ Assumptions: A basic page resembling social media
 - wall
 - adding posts
 
-##Requirments
+## Requirments
 - docker
 - docker-compose
 
-##Instalation 
+## Instalation 
 ```
 $ git clone https://github.com/polapani/testtask.git
 $ docker-compose up -d
 ```
-##Seed 
+## Seed 
 init seed: 
 ```
 $ ./seed.sh
