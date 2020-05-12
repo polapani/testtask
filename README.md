@@ -17,6 +17,10 @@ $ docker-compose up -d
 $ docker exec -it app bash -c "/var/www/init.sh"
 ```
 
+## Launch
+
+http://localhost/
+
 You can log by a seed user:
 - login: test@test.pl
 - password: test
