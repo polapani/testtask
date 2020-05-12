@@ -8,18 +8,14 @@ Assumptions: A basic page resembling social media
 
 ## Requirments
 - docker
-- docker-compose
 
 ## Instalation 
 ```
 $ git clone https://github.com/polapani/testtask.git
 $ docker-compose up -d
+$ docker exec -it app bash -c "/var/www/init.sh"
 ```
-## Seed 
-init seed: 
-```
-$ ./seed.sh
-```
+
 You can log by a seed user:
 - login: test@test.pl
 - password: test
