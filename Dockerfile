@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y \
     libfreetype6-dev \
     locales \
     zip \
+    npm \
     jpegoptim optipng pngquant gifsicle \
     vim \
     unzip \
@@ -60,6 +61,9 @@ COPY . /var/www
 
 # Copy existing application directory permissions
 COPY --chown=www:www . /var/www
+
+RUN chmod 777 /var/www/storage -R
+RUN chmod 777 /var/www/
 
 # Change current user to www
 USER www
