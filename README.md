@@ -12,6 +12,7 @@ Assumptions: A basic page resembling social media
 ## Instalation 
 ```
 $ git clone https://github.com/polapani/testtask.git
+$ cd testtask
 $ docker-compose up -d
 $ docker exec -it app bash -c "/var/www/init.sh"
 ```
