@@ -7,6 +7,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+window.mdc = require('material-components-web')
 
 /**
  * The following block of code may be used to automatically register your

@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+
+
+       <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -30,8 +32,10 @@
                             @error('content')
                                 <div class="alert alert-danger">{{$message}}</div>
                             @enderror
-
-                            <input type="submit" class="form-control btn-success" value="@if($ID) Save @else Add post @endif">
+                            <button type="submit" class="mdc-button foo-button">
+                                <div class="mdc-button__ripple"></div>
+                                <span class="mdc-button__label">@if($ID) Save @else Add post @endif</span>
+                            </button>
                         </form>
                     </div>
                 </div>
